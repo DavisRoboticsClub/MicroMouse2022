@@ -1,0 +1,11 @@
+,,,,,,,,,,,
+,Left Motor,,,,Right Motor,,,,RBG LED,1,
+,IN1,7,blue,,IN3,4,yellow,,,,
+,IN2,6,green,,IN4,5,red,,Ultrasonic,14,white
+,ENA,2,,,ENB,3,,,,,
+,,,,,,,,,button,30,gray/white
+,Left Encoder,,,,Right Encoder,,,,,,
+,A,21,blue IIII,,A,23,blue II,,DIP1,35,red
+,B,20,blue III,,B,22,blue I,,DIP2,36,red
+,,,,,,,,,DIP3,37,red
+,IR Left,16,white II,,IR Right,17,white I,,DIP4,38,red

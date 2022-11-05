@@ -9,3 +9,17 @@
 ,B,20,blue III,,B,22,blue I,,DIP2,36,red
 ,,,,,,,,,DIP3,37,red
 ,IR Left,16,white II,,IR Right,17,white I,,DIP4,38,red
+MOST OF THE ABOVE ARE UNVERIFIED
+
+Verified/corrected:
+,,,,,,,,,,,
+,Left Motor,,,,Right Motor,,,,RBG LED,1,
+,IN1,,blue,,IN3,,yellow,,,,
+,IN2,,green,,IN4,,red,,Ultrasonic,,white
+,ENA,16,,,ENB,,,,,,
+,,,,,,,,,button,30,gray/white
+,Left Encoder,,,,Right Encoder,,,,,,
+,A,,blue IIII,,A,,blue II,,DIP1,,red
+,B,,blue III,,B,,blue I,,DIP2,,red
+,,,,,,,,,DIP3,,red
+,IR Left,,white II,,IR Right,,white I,,DIP4,,red

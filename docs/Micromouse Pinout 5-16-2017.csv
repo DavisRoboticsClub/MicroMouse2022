@@ -1,5 +1,5 @@
 ,,,,,,,,,,,
-,Left Motor,,,,Right Motor,,,,RBG LED,1,
+,Left Motor,,,,Right Motor,,,,RBG LED,10,
 ,IN1,18,blue,,IN3,20,yellow,,,,
 ,IN2,19,green,,IN4,21,red,,Ultrasonic,37,white
 ,ENA,16,,,ENB,17,,,,,
@@ -12,7 +12,7 @@
 ,,,,,,,,,,,MOST OF THE ABOVE ARE UNVERIFIED AND WRONG
 ,,,,,,,,,,,Verified/corrected:
 ,,,,,,,,,,,
-,Left Motor,,,,Right Motor,,,,RBG LED,,
+,Left Motor,,,,Right Motor,,,,RBG LED,10,
 ,IN1,18,blue,,IN3,20,yellow,,Internal LED,13,
 ,IN2,19,green,,IN4,21,red,,Ultrasonic,37,white
 ,ENA,16,,,ENB,17,,,,,

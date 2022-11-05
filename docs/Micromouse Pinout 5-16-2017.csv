@@ -12,8 +12,8 @@
 ,,,,,,,,,,,MOST OF THE ABOVE ARE UNVERIFIED AND WRONG
 ,,,,,,,,,,,Verified/corrected:
 ,,,,,,,,,,,
-,Left Motor,,,,Right Motor,,,,RBG LED,1,
-,IN1,18,blue,,IN3,,yellow,,,,
+,Left Motor,,,,Right Motor,,,,RBG LED,,
+,IN1,18,blue,,IN3,,yellow,,Internal LED,13,
 ,IN2,19,green,,IN4,,red,,Ultrasonic,,white
 ,ENA,16,,,ENB,,,,,,
 ,,,,,,,,,button,,gray/white

@@ -16,5 +16,12 @@ HBridge::HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)
   digitalWrite(EN, LOW);
 }
 
-void HBridge::spin();
-void HBridge::stop();
+void HBridge::spin()
+{
+
+}
+
+void HBridge::stop()
+{
+  
+}

@@ -1,6 +1,6 @@
 #include "core_pins.h"
 #include <sys/types.h>
-#include "HBridge.h"
+#include "MicroMouseHBridge.h"
 
 
 MicroMouse::HBridge::HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)

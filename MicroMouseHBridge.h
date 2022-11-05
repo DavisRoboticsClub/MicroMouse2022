@@ -1,5 +1,5 @@
-#ifndef HBRIDGE_H
-#define HBRIDGE_H
+#ifndef MICROMOUSEHBRIDGE_H
+#define MICROMOUSEHBRIDGE_H
 
 #include <cstdint>
 

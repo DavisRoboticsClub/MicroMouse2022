@@ -1,4 +1,5 @@
 
+#include "MicroMouseHBridge.h"
 // Micromouse pinout
 // Left Motor
 const uint8_t IN1_pin = 18;  // blue
@@ -49,7 +50,10 @@ void setup() {
   digitalWrite(IN3_pin, HIGH);
   digitalWrite(IN4_pin, LOW);
   digitalWrite(ENB_pin, LOW);
+
+  auto h = MicroMouse::HBridge(3, 4, 5);
 }
+
 
 void loop() {
   //digitalWrite(led_pin, LOW);

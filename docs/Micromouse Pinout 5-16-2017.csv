@@ -18,7 +18,7 @@
 ,ENA,16,,,ENB,17,,,,,
 ,,,,,,,,,button,,gray/white
 ,Left Encoder,,,,Right Encoder,,,,,,
-,A,,blue IIII,,A,,blue II,,DIP1,,red
-,B,,blue III,,B,,blue I,,DIP2,,red
-,,,,,,,,,DIP3,,red
-,IR Left,14,white II,,IR Right,15,white I,,DIP4,,red
+,A,23,blue IIII,,A,38,blue II,,DIP1,6,red
+,B,22,blue III,,B,39,blue I,,DIP2,7,red
+,,,,,,,,,DIP3,8,red
+,IR Left,14,white II,,IR Right,15,white I,,DIP4,9,red

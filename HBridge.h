@@ -11,9 +11,7 @@ class HBridge
   const uint8_t EN;
 
   public:
-  HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)
-  : IN1(IN1), IN2(IN2), EN(EN)
-  { }
+  HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN);
 
   void spin();
   void stop();

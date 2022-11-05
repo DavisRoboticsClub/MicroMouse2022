@@ -9,9 +9,8 @@
 ,B,20,blue III,,B,22,blue I,,DIP2,36,red
 ,,,,,,,,,DIP3,37,red
 ,IR Left,16,white II,,IR Right,17,white I,,DIP4,38,red
-MOST OF THE ABOVE ARE UNVERIFIED
-
-Verified/corrected:
+,,,,,,,,,,,MOST OF THE ABOVE ARE UNVERIFIED
+,,,,,,,,,,,Verified/corrected:
 ,,,,,,,,,,,
 ,Left Motor,,,,Right Motor,,,,RBG LED,1,
 ,IN1,,blue,,IN3,,yellow,,,,

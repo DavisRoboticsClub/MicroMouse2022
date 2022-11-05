@@ -3,7 +3,7 @@
 #include "HBridge.h"
 
 
-HBridge::HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)
+MicroMouse::HBridge::HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)
 : IN1(IN1), IN2(IN2), EN(EN)
 {
   pinMode(IN1, OUTPUT);
@@ -16,12 +16,12 @@ HBridge::HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN)
   digitalWrite(EN, LOW);
 }
 
-void HBridge::spin()
+void MicroMouse::HBridge::spin()
 {
 
 }
 
-void HBridge::stop()
+void MicroMouse::HBridge::stop()
 {
-  
+
 }

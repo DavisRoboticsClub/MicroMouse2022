@@ -3,18 +3,21 @@
 
 #include <cstdint>
 
-class HBridge
+namespace MicroMouse
 {
-  private:
-  const uint8_t IN1;
-  const uint8_t IN2;
-  const uint8_t EN;
+  class HBridge
+  {
+    private:
+    const uint8_t IN1;
+    const uint8_t IN2;
+    const uint8_t EN;
 
-  public:
-  HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN);
+    public:
+    HBridge(uint8_t IN1, uint8_t IN2, uint8_t EN);
 
-  void spin();
-  void stop();
-};
+    void spin();
+    void stop();
+  };
+}
 
 #endif

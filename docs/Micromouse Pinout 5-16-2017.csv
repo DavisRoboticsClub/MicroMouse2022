@@ -8,7 +8,7 @@
 ,A,21,blue IIII,,A,23,blue II,,DIP1,35,red
 ,B,20,blue III,,B,22,blue I,,DIP2,36,red
 ,,,,,,,,,DIP3,37,red
-,IR Left,16,white II,,IR Right,17,white I,,DIP4,38,red
+,IR Left,14,white II,,IR Right,15,white I,,DIP4,38,red
 ,,,,,,,,,,,MOST OF THE ABOVE ARE UNVERIFIED AND WRONG
 ,,,,,,,,,,,Verified/corrected:
 ,,,,,,,,,,,
@@ -21,4 +21,4 @@
 ,A,,blue IIII,,A,,blue II,,DIP1,,red
 ,B,,blue III,,B,,blue I,,DIP2,,red
 ,,,,,,,,,DIP3,,red
-,IR Left,,white II,,IR Right,,white I,,DIP4,,red
+,IR Left,14,white II,,IR Right,15,white I,,DIP4,,red

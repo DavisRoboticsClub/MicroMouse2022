@@ -1,7 +1,7 @@
 ,,,,,,,,,,,
 ,Left Motor,,,,Right Motor,,,,RBG LED,1,
 ,IN1,18,blue,,IN3,20,yellow,,,,
-,IN2,19,green,,IN4,21,red,,Ultrasonic,14,white
+,IN2,19,green,,IN4,21,red,,Ultrasonic,37,white
 ,ENA,16,,,ENB,17,,,,,
 ,,,,,,,,,button,30,gray/white
 ,Left Encoder,,,,Right Encoder,,,,,,
@@ -14,7 +14,7 @@
 ,,,,,,,,,,,
 ,Left Motor,,,,Right Motor,,,,RBG LED,,
 ,IN1,18,blue,,IN3,20,yellow,,Internal LED,13,
-,IN2,19,green,,IN4,21,red,,Ultrasonic,,white
+,IN2,19,green,,IN4,21,red,,Ultrasonic,37,white
 ,ENA,16,,,ENB,17,,,,,
 ,,,,,,,,,button,,gray/white
 ,Left Encoder,,,,Right Encoder,,,,,,

@@ -13,8 +13,8 @@
 ,,,,,,,,,,,Verified/corrected:
 ,,,,,,,,,,,
 ,Left Motor,,,,Right Motor,,,,RBG LED,1,
-,IN1,,blue,,IN3,,yellow,,,,
-,IN2,,green,,IN4,,red,,Ultrasonic,,white
+,IN1,18,blue,,IN3,,yellow,,,,
+,IN2,19,green,,IN4,,red,,Ultrasonic,,white
 ,ENA,16,,,ENB,,,,,,
 ,,,,,,,,,button,,gray/white
 ,Left Encoder,,,,Right Encoder,,,,,,

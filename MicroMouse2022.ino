@@ -43,16 +43,14 @@ const uint8_t led_pin = 13;
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(IN3_pin, OUTPUT);
-  pinMode(IN4_pin, OUTPUT);
-  pinMode(ENB_pin, OUTPUT);
-  pinMode(led_pin, OUTPUT);
-  digitalWrite(IN3_pin, HIGH);
-  digitalWrite(IN4_pin, LOW);
-  digitalWrite(ENB_pin, LOW);
 
-  auto h = MicroMouse::HBridge(3, 4, 5);
-}
+  auto hbridge_left  = MicroMouse::HBridge(IN1_pin, IN2_pin, ENA_pin);
+  auto hbridge_right = MicroMouse::HBridge(IN3_pin, IN4_pin, ENB_pin);
+
+  hbridge_left.spin(50);
+  hbridge_right.spin(50);
+
+ }
 
 
 void loop() {

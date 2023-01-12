@@ -63,12 +63,14 @@ void loop() {
   // put your main code here, to run repeatedly:
   long distanceus = usrfIn();
   long inch = microsecondsToInches(distanceus);
+  Serial.print("inches:");
+  Serial.println(inch);
   if (inch < 5){
     digitalWrite(led_pin, HIGH);
   } else {
      digitalWrite(led_pin, LOW);
   }
-  if (inch < 10){
+  if (inch < 5){
     digitalWrite(rgb_led_pin, HIGH);
   } else {
      digitalWrite(rgb_led_pin, LOW);
@@ -78,6 +80,7 @@ void loop() {
 
 long usrfIn(){
   pinMode(ultrasonic_pin,OUTPUT);
+  delay(1);
   digitalWrite(ultrasonic_pin,LOW);
   delayMicroseconds(2);
   digitalWrite(ultrasonic_pin,HIGH);

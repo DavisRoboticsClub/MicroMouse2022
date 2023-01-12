@@ -47,9 +47,11 @@ void setup() {
   auto hbridge_left  = MicroMouse::HBridge(IN1_pin, IN2_pin, ENA_pin);
   auto hbridge_right = MicroMouse::HBridge(IN3_pin, IN4_pin, ENB_pin);
 
-  hbridge_left.spin(50);
-  hbridge_right.spin(50);
-
+  //hbridge_left.spin(50);
+  //hbridge_right.spin(50);
+  //delay(1000);
+  hbridge_left.spin(0);
+  hbridge_right.spin(0);
  }
 
 

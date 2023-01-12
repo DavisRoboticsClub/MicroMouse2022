@@ -1,4 +1,4 @@
-
+#include <Adafruit_NeoPixel.h>
 #include "MicroMouseHBridge.h"
 // Micromouse pinout
 // Left Motor
@@ -35,6 +35,8 @@ const uint8_t dip_4_pin = 9;   // red
 
 // RGB LED
 const uint8_t rgb_led_pin = 10;
+#define rbg_led_num_pixels 1
+Adafruit_NeoPixel rgb(rbg_led_num_pixels, rgb_led_pin, NEO_GRB + NEO_KHZ800);
 
 //internal status led
 const uint8_t led_pin = 13;
@@ -48,20 +50,18 @@ auto hbridge_right = MicroMouse::HBridge(IN3_pin, IN4_pin, ENB_pin);
 void setup() {
   // put your setup code here, to run once:
 
-  //hbridge_left.spin(50);
-  //hbridge_right.spin(50);
   hbridge_left.spin(0);
   hbridge_right.spin(0);
   pinMode(led_pin,OUTPUT);
-  pinMode(rgb_led_pin,OUTPUT);
+  rgb.begin();
+  rgb.setPixelColor(0, rgb.Color(0,20,20));
+  rgb.show();
   boolean toggle = false;
   for(int i=0; i<20; i++){ //give user time to disconnect from computer
     delay(100);
     toggle=!toggle;
     digitalWrite(led_pin,toggle);
   }
-  //hbridge_left.spin(50);
-  //hbridge_right.spin(0);
  }
 
 
@@ -69,7 +69,7 @@ void loop() {
   //digitalWrite(led_pin, LOW);
   //delay(1000);
   //digitalWrite(led_pin, HIGH);
-  //delay(1000);
+  //delay(10);
   // put your main code here, to run repeatedly:
   long distanceus = usrfIn();
   long inch = microsecondsToInches(distanceus);
@@ -77,15 +77,17 @@ void loop() {
   Serial.println(inch);
   if (inch < 5){
     digitalWrite(led_pin, HIGH);
-    digitalWrite(rgb_led_pin, HIGH);
     hbridge_left.spin(50);
     hbridge_right.spin(-50);
+    rgb.setPixelColor(0, rgb.Color(5,0,0));
+    rgb.show();
     
   } else {
      digitalWrite(led_pin, LOW);
-         digitalWrite(rgb_led_pin, LOW);
      hbridge_left.spin(50);
      hbridge_right.spin(50);
+     rgb.setPixelColor(0, rgb.Color(0,inch,10));
+     rgb.show();
   }
 }
 

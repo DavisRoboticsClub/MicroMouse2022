@@ -40,18 +40,28 @@ const uint8_t rgb_led_pin = 10;
 const uint8_t led_pin = 13;
 
 
+//hbridge setup
+
+auto hbridge_left  = MicroMouse::HBridge(IN1_pin, IN2_pin, ENA_pin);
+auto hbridge_right = MicroMouse::HBridge(IN3_pin, IN4_pin, ENB_pin);
 
 void setup() {
   // put your setup code here, to run once:
 
-  auto hbridge_left  = MicroMouse::HBridge(IN1_pin, IN2_pin, ENA_pin);
-  auto hbridge_right = MicroMouse::HBridge(IN3_pin, IN4_pin, ENB_pin);
-
   //hbridge_left.spin(50);
   //hbridge_right.spin(50);
-  //delay(1000);
   hbridge_left.spin(0);
   hbridge_right.spin(0);
+  pinMode(led_pin,OUTPUT);
+  pinMode(rgb_led_pin,OUTPUT);
+  boolean toggle = false;
+  for(int i=0; i<20; i++){ //give user time to disconnect from computer
+    delay(100);
+    toggle=!toggle;
+    digitalWrite(led_pin,toggle);
+  }
+  //hbridge_left.spin(50);
+  //hbridge_right.spin(0);
  }
 
 
@@ -67,13 +77,15 @@ void loop() {
   Serial.println(inch);
   if (inch < 5){
     digitalWrite(led_pin, HIGH);
+    digitalWrite(rgb_led_pin, HIGH);
+    hbridge_left.spin(50);
+    hbridge_right.spin(-50);
+    
   } else {
      digitalWrite(led_pin, LOW);
-  }
-  if (inch < 5){
-    digitalWrite(rgb_led_pin, HIGH);
-  } else {
-     digitalWrite(rgb_led_pin, LOW);
+         digitalWrite(rgb_led_pin, LOW);
+     hbridge_left.spin(50);
+     hbridge_right.spin(50);
   }
 }
 

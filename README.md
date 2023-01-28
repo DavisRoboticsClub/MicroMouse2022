@@ -14,3 +14,12 @@ The micromouse is functional and running a simple obstacle avoidance program.
 #### software:
 - Test and integrate IR sensors
 - Implement more advanced maze solving logic
+
+
+### Initial setup:
+- [Download teensydunino software](https://www.pjrc.com/teensy/td_download.html)
+- Clone this repo
+- Install the Adafruit_NeoPixel library in Sketch > Include Library > Manage Libraries
+
+### Resources:
+- [Teensy 3.6 documentation](https://www.pjrc.com/store/teensy36.html)

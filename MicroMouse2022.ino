@@ -22,7 +22,10 @@ const uint8_t ultrasonic_pin = 37;    // white
 
 // IR Sensors
 const uint8_t IR_left_pin = 14;   // white II
+//const uint8_t IR_left_Analog_pin = A0; //A0=14 on Teensy
 const uint8_t IR_right_pin = 15;  // white I
+//const uint8_t IR_right_Analog_pin = A1; //A1=15 on Teensy
+
 
 // Button
 //const uint8_t button_pin = 30;  // gray/white
@@ -73,8 +76,18 @@ void loop() {
   // put your main code here, to run repeatedly:
   long distanceus = usrfIn();
   long inch = microsecondsToInches(distanceus);
+  int rawIRleft = analogRead(IR_left_pin);
+  int rawIRright = analogRead(IR_right_pin);
+
+  //debug status info
   Serial.print("inches:");
   Serial.println(inch);
+  Serial.print("IR Values:\n L:  ");
+  Serial.print(rawIRleft);
+  Serial.print("     R:  ");
+  Serial.print(rawIRright);
+
+  
   if (inch < 12){
     digitalWrite(led_pin, HIGH);
     hbridge_left.spin(50);

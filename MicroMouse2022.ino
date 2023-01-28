@@ -75,7 +75,7 @@ void loop() {
   long inch = microsecondsToInches(distanceus);
   Serial.print("inches:");
   Serial.println(inch);
-  if (inch < 5){
+  if (inch < 12){
     digitalWrite(led_pin, HIGH);
     hbridge_left.spin(50);
     hbridge_right.spin(-50);

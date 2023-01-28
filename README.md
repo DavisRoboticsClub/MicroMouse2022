@@ -22,4 +22,6 @@ The micromouse is functional and running a simple obstacle avoidance program.
 - (May not be necessary) Install the Adafruit_NeoPixel library in Sketch > Include Library > Manage Libraries
 
 ### Resources:
-- [Teensy 3.6 documentation](https://www.pjrc.com/store/teensy36.html)
+- [Teensy 3.6 documentation](https://www.pjrc.com/store/teensy36.html),
+- [IR sensor datasheet](https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a51sk_e.pdf),
+- [Pinout](docs/Micromouse%20Pinout%202022.csv)
